@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a80ae225.css",
+    "main.js": "/static/js/main.1082379a.js",
+    "static/media/sofachrome rg.otf": "/static/media/sofachrome rg.23251b6ef6c9f02ea5c1.otf",
+    "static/media/neuropolitical rg.otf": "/static/media/neuropolitical rg.5ea93bf78c46ef262e82.otf",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.a80ae225.css.map": "/static/css/main.a80ae225.css.map",
+    "main.1082379a.js.map": "/static/js/main.1082379a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a80ae225.css",
+    "static/js/main.1082379a.js"
+  ]
+}
