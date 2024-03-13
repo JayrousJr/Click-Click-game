@@ -1,13 +1,217 @@
-body {
+@font-face {
+  font-family: body;
+  src: url("./font/sofachrome\ rg.otf");
+}
+@font-face {
+  font-family: paragraph;
+  src: url("./font/neuropolitical\ rg.otf");
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  font-family: body;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f9f9f9;
+  margin: 0px;
+}
+p {
+  font-family: paragraph;
+}
+main {
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+}
+.dark {
+  background-color: #1271cf;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: center;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 15px;
+  box-shadow: 3px 3px 3px #cacaca;
+}
+.dark .nav {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 15px;
+  box-shadow: 3px 3px 3px #1764b1;
+}
+.title {
+  font-family: paragraph;
+  font-size: 12px;
+  cursor: help;
+}
+.modes {
+  font-family: paragraph;
+  font-size: 12px;
+}
+.dark .app-head {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: #f2f2f2;
+}
+.app-head {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.dark .app-exp {
+  color: #f2f2f2;
+}
+.game-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.number-body {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template: auto auto / repeat(4, 1fr);
+  padding-top: 10px;
+  gap: 10px;
+}
+.numbers {
+  font-family: paragraph;
+  font-size: 10px;
+  height: 45px;
+  width: 45px;
+  background-color: #147de7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 1px 2px 2px #3c9bfa;
+  color: #f2f2f2;
+}
+.dark .numbers {
+  background-color: #8041bd;
+  box-shadow: 1px 2px 2px #633394;
+}
+.game-btn {
+  padding: 10px 40px;
+  margin-top: 10px;
+  border: none;
+  background-color: #f25678;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #f2f2f2;
+}
+.game-btn:hover {
+  background-color: #f256788e;
+}
+.game-button {
+  font-family: sans-serif;
+  width: 32px;
+  height: 32px;
+  font-weight: 600;
+  background-color: #278ef7;
+  color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+.dark .game-button {
+  background-color: #8041bd;
+  box-shadow: 1px 2px 2px #633394;
+}
+.gameover {
+  font-family: paragraph;
+}
+.confetti {
+  width: 100%;
+  height: 100vh;
+}
+.light-mode {
+  cursor: pointer;
+}
+.help {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.help-head {
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 2px;
+}
+.dark .help-head {
+  color: #f2f2f2;
+}
+.help p {
+  font-size: 14px;
+  padding: 10px 2px;
+}
+.dark .help p {
+  color: #f2f2f2;
+}
+.help .footer a {
+  font-size: 14px;
+  font-family: paragraph;
+}
+.dark .help a {
+  color: #cacaca;
+}
+/* notification */
+.notification-container {
+  position: relative;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.modal p {
+  margin: 0;
+}
+
+.modal .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
 }
